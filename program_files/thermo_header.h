@@ -13,11 +13,6 @@ extern void delay_ms(int_u16 delay);
 extern void lcd_init(void);
 extern void lcd_cmd(char_u8 cmd);
 extern void print_str(char_u8 *p);
-extern void print_ch(char_u8 p);
-extern void print_int(int_u16 n);
-extern void print_float(f_32 n);
-
-extern char_u8 digit_count(int_u16 n);
 
 extern void byte_write(char_u8 SA, char_u8 MR, char_u8 Data);
 extern char_u8 byte_read(char_u8 SA, char_u8 MR);
@@ -33,9 +28,6 @@ extern int_u16 read_adc(bit d1, bit d0);
 extern char_u8 * read_time(void);
 extern char_u8 * read_date(void);
 extern void set_rtc();
-
-extern void adc_init(char_u8 c, char_u8 b, char_u8 a);
-
 
 
 #endif
