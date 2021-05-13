@@ -1,5 +1,5 @@
-#ifndef __temp_header_h__
-#define __temp_header_h__
+#ifndef __thermo_header_h__
+#define __thermo_header_h__
 
 typedef unsigned char char_u8;
 typedef char char_s8;
@@ -10,6 +10,7 @@ typedef long int int_s32;
 typedef float f_32;
 
 extern void delay_ms(int_u16 delay);
+
 extern void lcd_init(void);
 extern void lcd_cmd(char_u8 cmd);
 extern void print_str(char_u8 *p);
